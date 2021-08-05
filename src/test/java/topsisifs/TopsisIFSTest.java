@@ -1,8 +1,12 @@
-package algo;
+package topsisifs;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-public class TopsisTest {
+import java.math.BigDecimal;
+import java.util.Arrays;
+
+public class TopsisIFSTest {
 
 	@Test public void test() {
 
@@ -45,6 +49,16 @@ public class TopsisTest {
 				a1,a2,a3,a4,a5
 		};
 
-		Topsis.getInstance().computeResult(alternatives);
+		var expectedResult = new double[] {
+				0.6544,
+				0.596,
+				0.5258,
+				0.4985,
+				0.4524
+		};
+		Assert.assertArrayEquals(Arrays.stream(TopsisIFS.getInstance().computeResult(alternatives))
+				.map(TopsisIFS.ComputedAlternative::getRelativeCloseness)
+				.mapToDouble(BigDecimal::doubleValue)
+				.toArray(), expectedResult, 0.1);
 	}
 }

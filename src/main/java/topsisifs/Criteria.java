@@ -1,4 +1,4 @@
-package algo;
+package topsisifs;
 
 public class Criteria {
 
@@ -17,5 +17,9 @@ public class Criteria {
 
 	public double getWeight() {
 		return weight;
+	}
+
+	@Override public String toString() {
+		return "Criteria{" + "name='" + name + '\'' + ", weight=" + weight + '}';
 	}
 }

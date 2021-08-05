@@ -1,4 +1,4 @@
-package algo;
+package topsisifs;
 
 public abstract class IFSValue {
 
@@ -36,5 +36,9 @@ public abstract class IFSValue {
 
 	public void setvA(double vA) {
 		this.vA = vA;
+	}
+
+	@Override public String toString() {
+		return "IFSValue{" + "criteria=" + criteria + ", μA=" + μA + ", vA=" + vA + '}';
 	}
 }

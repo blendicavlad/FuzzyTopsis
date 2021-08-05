@@ -1,4 +1,4 @@
-package algo;
+package topsisifs;
 
 public class NegativeIdealSolution extends IFSValue {
 

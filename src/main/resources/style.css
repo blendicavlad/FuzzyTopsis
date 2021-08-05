@@ -1,0 +1,27 @@
+.jfx-button {
+    -jfx-button-type: RAISED;
+    -fx-background-color: #2196f3;
+    -fx-text-fill: white;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.jfx-radio-button {
+    -jfx-selected-color: #2196f3!important;
+    -jfx-unselected-color: white!important;
+}
+
+.jfx-rippler {
+    -jfx-rippler-fill: #2196f3!important;
+}
+
+.jfx-textfield {
+    -fx-text-fill: white!important;
+    -fx-prompt-text-fill: white!important;
+    -fx-font-family: Kefa;
+    -fx-focus-color: white;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #2196f3!important;
+}
